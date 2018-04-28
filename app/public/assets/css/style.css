@@ -1,0 +1,100 @@
+
+
+
+.parallax {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* background-image: url('../images/pug-coffee.jpg');
+    background-attachment: fixed; */
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+}
+
+.first-parallax {
+    background-image: url('../images/pug-coffee.jpg');
+    background-attachment: fixed;
+
+}
+
+.second-parallax {
+    background-image: url('../images/pinky-swear.jpg');
+    background-attachment: fixed;
+}
+
+.questions-parallax {
+    background-color: rgb(238, 227, 228);
+}
+
+.homePage {
+    background-color: rgb(238, 227, 228);
+}
+
+.home-text {
+    font-size: 100px;
+}
+
+.home-text,
+.lead-body {
+	font-family: 'Berkshire Swash', cursive;
+	color: rgb(40, 7, 7);
+	text-shadow:
+	-1px -1px 0 rgb(40, 7, 7),
+	1px -1px 0 rgb(255, 255, 255),
+	-1px 1px 0 rgb(40, 7, 7),
+	1px 1px 0 rgb(249, 249, 249);
+}
+
+.btn-style {
+    background-color: rgb(79, 0, 0);
+    color: white;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 50%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.btn-style:hover {
+    background-color: rgba(79, 0, 0, .5);
+    font-size: 25px;
+    padding: 11.5px;
+  }
+
+footer {
+	background-color: rgb(40, 7, 7);
+	padding: 20px;
+	color: white; 
+    text-align: center;
+
+}
+
+
+.lead-body {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.paragraph-details {
+    text-align: center;
+}
+
+.spacer {
+    padding-bottom: 50px;
+}
+
+.modal {
+    position: fixed;
+
+};
