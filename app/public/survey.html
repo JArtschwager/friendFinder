@@ -19,8 +19,6 @@
       <h1 class="home-text">Take the Survey</h1>
     </div>
   </div>
-
-
   <div class="questions-parallax">
     <div class="container">
       <h1 class="header lead-body">First, Tell us a little about you</h1>
@@ -45,7 +43,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -58,14 +56,14 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
         </div>
 
         <h3>Question 3</h3>
-        <h4>When it comes to food, I'll try anything once. I stay clear of those franchiese places. Family owned is the way to
+        <h4>When it comes to food, I'll try anything once. I stay clear of those franchise places. Family owned is the way to
           go.
         </h4>
         <div class="input-group mb-3">
@@ -73,7 +71,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -86,7 +84,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -99,7 +97,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -112,7 +110,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -125,7 +123,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -138,7 +136,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -151,7 +149,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -164,7 +162,7 @@
             <option selected>select an option</option>
             <option value="1">1 (no way!)</option>
             <option value="2">2 </option>
-            <option value="3">3 </option>
+            <option value="3">3 (eh, sometimes)</option>
             <option value="4">4 </option>
             <option value="5">5 (strongly agree)</option>
           </select>
@@ -191,17 +189,15 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
-        <div class="modal-body">
-          <!-- insert html data here from jquery results.  need to use these to get a match complete to show. -->
-          <div class="modal-results" id="match-name"></div>
-          <div class="modal-results" id="match-picture"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">continue</button>
-          <!-- formerly the save changes button, -->
-        </div>
-      </div>
+          </div>
+          <div class="modal-body">          
+            <!-- insert html data here from jquery results.  need to use these to get a match complete to show. -->
+            <div class="modal-results" id="match-name"></div>
+            <img class="modal-results" id="match-picture" style="max-width: 300px;">
+          </div>
+          <div class="modal-footer">
+          </div>
+          </div>
     </div>
   </div>
 
@@ -211,16 +207,12 @@
     </div>
   </footer>
 
-
-
-  <!-- ask if this is supposed to be moved posting script to express server still need to bring in jquery-->
+<!-- begin JS for modal -->
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script type="text/javascript">
-    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in apiRoutes.js).
-    // In this case the associated code "saves" the data to the survey.js file 
-    $("#survey_submit").on("click", function (event) {
+    //below is when you click, you get the new friend info.
+  $("#survey_submit").on("click", function (event) {
       event.preventDefault();
 
       // Here we grab the form elements
@@ -244,109 +236,22 @@
       console.log(newFriend);
 
       $.post("/api/friends", newFriend, function (bestFriend) {
-
-        if (bestFriend) {
-          alert("Yay! You are officially finding a friend");
-        } else {
-          alert("nothing  to add");
-        }
-
-        // Clear the form when submitting
+        // // Clear the form when submitting
         $("#friend-name").val("");
         $("#friend-photo").val("");
 
-        // var score arrary and then the values and each values in order into the array.
-        //add ID's  see line 208
-        $("#friend-score").val("");
-        $("uuid").val("");
-        // //new friend i smy current user.  //data is all friends. for loop over all the friends. for each friend, compare their scores to new friends scores. and for loop 0-9 is all the scores. 
-        // #match-picture
-        // #match-name
+        console.log(bestFriend.name);
+        console.log(bestFriend.photo);
 
-        //show modal of Best Friend
-        $('#resultModal').modal('show');
-        
-        
-
-          //save the result, store it to the new best friend variable. with id and score.best friend if it's betteter than the best then replace it.
-
-
-
-
+          $('#match-name').text(bestFriend.name);
+          $("#match-picture").attr("src",bestFriend.photo);
+          $('#resultModal').modal('show');
       });
 
-    });
+});
 
-    ///////////////// post side
-
-    //getting code to display from the server.  sample is displayed in a table.  to be moved to modale.
-    function PostNewFriend() {
-
-      var currentURL = window.location.origin;
-
-      $.ajax({
-          url: currentURL + "/api/tables",
-          method: "GET"
-        })
-        .then(function (friendData) {
-
-          // Here we are logging the URL so we have access to it for troubleshooting
-          console.log("------------------------------------");
-          console.log("URL: " + currentURL + "/api/tables");
-          console.log("------------------------------------");
-
-          // Here we then log the NYTData to console, where it will show up as an object.
-          console.log(friendData);
-          console.log("------------------------------------");
-
-          // Loop through and display each of the customers
-          for (var i = 0; i < friendData.length; i++) {
-
-            // Create the HTML Well (Section) and Add the table content for each reserved table
-            var tableSection = $("<div>");
-            tableSection.addClass("well");
-            tableSection.attr("id", "tableWell-" + i + 1);
-            $("#tableSection").append(tableSection);
-            //above may have to be modal the table well?
-            var friendNumber = i + 1;
-            // Then display the remaining fields in the HTML (Section Name, Date, URL)
-            $("#tableWell-" + i + 1).append("<h2><span class='label label-primary'>" + tableNumber + "</span> | " +
-              friendData[i].customerID + "</h2>");
-          }
-        });
-    }
-
-
-    // // This function resets all of the data in our tables. This is intended to let you restart a demo.
-    // function clearTable() {
-
-    //   var currentURL = window.location.origin;
-    //   $.ajax({ url: currentURL + "/api/clear", method: "POST" });
-
-    // }
-
-    // $("#clear").on("click", function() {
-    //   alert("Clearing...");
-    //   clearTable();
-
-    //   // Refresh the page after data is cleared
-    //   location.reload();
-
-    // });
-
-
-    // Run Queries!
-    // ==========================================
-    // BRIAN COMMENTED THIS OFF BECAUSE IT WAS ANNOYING DURING TESTING
-    // PostNewFriend();
-
-    // BRIAN COMMENTED THIS OFF BECAUSE IT WAS ANNOYING DURING TESTING
-    //the modal js
-    $('#resultModal').on('shown.bs.modal', function () {
-      $('#myInput').trigger('focus')
-    })
+    
   </script>
-
 
 </body>
 
