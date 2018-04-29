@@ -1,5 +1,9 @@
 var uuid = require('uuid/v4');
-var friends = require('../data/friends'); //.js
+var friends = require('../data/friends.json'); //.js
+var fs = require('fs');
+var path = require('path');
+
+console.log(friends);
 
 module.exports = function (app) {
     //get all info from 
@@ -16,6 +20,12 @@ module.exports = function (app) {
         newFriend.id = uuid();
         console.log(newFriend);
         friends.push(newFriend);
+
+        //write friends back to friends.js to persist object between memory changes.
+        fs.writeFile(path.join(__dirname, '..', 'data','friends.json'), JSON.stringify(friends), function (err) {
+           if (err) throw err;
+           console.log('Saved!');
+        });
 
         // Compare Friends
 
@@ -41,7 +51,6 @@ module.exports = function (app) {
 
         console.log(bestFriendScore);
         console.log(bestFriend);
-
         response.json(bestFriend);
 
         //then send back the match. jquery has a method for modal to open. bootstrap? 

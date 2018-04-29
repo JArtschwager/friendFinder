@@ -52,6 +52,23 @@ var friendArray = [
       ],
       id: uuid()
   },
+  {   name: "Mickey Mouse",
+  photo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Mickey_Mouse.png/220px-Mickey_Mouse.png",
+  "scores":[
+      0,
+      1,
+      2,
+      1,
+      5,
+      1,
+      2,
+      1,
+      3,
+      1
+    ],
+    id: uuid()
+},
 ];
+
 
 module.exports = friendArray;
